@@ -20,16 +20,5 @@
                 Canvas.Left="10" Canvas.Top="10" 
                 FontSize="14" FontFamily="Georgia" 
                 FontWeight="Bold"/>
-
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button                
-                Content="Go to View 1"
-                Command="{Binding GoTo1}"
-                Width="90" Height="30" Margin="0,20" />
-            <Button               
-                Content="Go to View 2"
-                Command="{Binding GoTo2}"
-                Width="90" Height="30" />
-        </StackPanel>
     </Grid>
 </UserControl>

@@ -1,12 +1,21 @@
 ﻿using BasicMvvmVarOne.ViewModels;
 using BasicMvvmVarOne.Infra;
 using System.Collections.Generic;
+using System.Windows.Input;
+using System;
 
 namespace BasicMvvmVarOne.ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {
         private IPageViewModel? _pageViewModel;
+
+        private ICommand? _goTo1;
+        private ICommand? _goTo2;
+        private ICommand? _goTo3;
+
+        public event EventHandler<EventArgs<string>>? ViewChanged;
+
         private readonly Dictionary<string, IPageViewModel>? _pageViewModels = new();
 
         public IPageViewModel? CurrentPageViewModel
@@ -47,6 +56,39 @@ namespace BasicMvvmVarOne.ViewModels
             };
 
             CurrentPageViewModel = _pageViewModels["1"];
+        }
+
+        public ICommand GoTo1
+        {
+            get
+            {
+                return _goTo1 ??= new RelayCommand(x =>
+                {
+                    CurrentPageViewModel = _pageViewModels?["1"];
+                });
+            }
+        }
+
+        public ICommand GoTo2
+        {
+            get
+            {
+                return _goTo2 ??= new RelayCommand(x =>
+                {
+                    CurrentPageViewModel = _pageViewModels?["2"];
+                });
+            }
+        }
+
+        public ICommand GoTo3
+        {
+            get
+            {
+                return _goTo3 ??= new RelayCommand(x =>
+                {
+                    CurrentPageViewModel = _pageViewModels?["3"];
+                });
+            }
         }
     }
 }

@@ -9,6 +9,22 @@
         mc:Ignorable="d"
         Title="Page Navigation he" Height="450" Width="800">
     <Grid>
-        <ContentControl Content="{Binding CurrentPageViewModel}" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ContentControl Grid.Row="0" Content="{Binding CurrentPageViewModel}" />
+        <Border Grid.Row="1">
+            <ItemsControl x:Name="ItemsControl">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="3" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <Button Content="Go to View 1" Command="{Binding GoTo1}" Width="90" Height="30" Margin="0,10" />
+                <Button Content="Go to View 2" Command="{Binding GoTo2}" Width="90" Height="30" />
+                <Button Content="Go to View 3" Command="{Binding GoTo3}" Width="90" Height="30" />
+            </ItemsControl>
+        </Border>
     </Grid>
 </Window>

@@ -13,4 +13,4 @@ xmlns:localVs="clr-namespace:BasicMvvm.Views"
 xmlns:localVms="clr-namespace:BasicMvvm.ViewModels"
 ```
 
-5. 
+5. I am not sure about why this (IDataModel pageViews) is needed. 
