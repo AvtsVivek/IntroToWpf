@@ -1,11 +1,11 @@
-﻿using BasicMvvmVarOne.ViewModels;
-using BasicMvvmVarOne.Views;
-using BasicMvvmVarOne.Infra;
+﻿using ListBoxScrollViewer.ViewModels;
+using ListBoxScrollViewer.Views;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Windows;
+using ListBoxScrollViewer.Infra;
 
-namespace BasicMvvmVarOne
+namespace ListBoxScrollViewer
 {
     /// <summary>
     /// Interaction logic for App.xaml
