@@ -24,8 +24,6 @@ namespace BasicMvvm.ViewModels
                 return _goTo2 ??= new RelayCommand(x =>
                 {
                     ViewChanged?.Raise(this, "2");
-
-
                 });
             }
         }
