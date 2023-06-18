@@ -1,4 +1,5 @@
-﻿using BasicMvvm.ViewModels;
+﻿using BasicMvvm.Infra;
+using BasicMvvm.ViewModels;
 using BasicMvvm.Views;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

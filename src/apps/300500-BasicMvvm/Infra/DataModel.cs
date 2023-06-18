@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BasicMvvm
+namespace BasicMvvm.Infra
 {
     public class DataModel : IDataModel
     {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BasicMvvm.Infra;
+using System.Collections.Generic;
 
 namespace BasicMvvm.ViewModels
 {

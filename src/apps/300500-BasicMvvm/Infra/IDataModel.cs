@@ -1,4 +1,4 @@
-﻿namespace BasicMvvm
+﻿namespace BasicMvvm.Infra
 {
     public interface IDataModel
     {
