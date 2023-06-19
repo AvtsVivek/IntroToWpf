@@ -15,7 +15,7 @@
         <Label 
                 Name="View1" 
                 VerticalAlignment="Top" HorizontalAlignment="Center"
-                Content="View 1" 
+                Content="Welcome" 
                 Height="40" 
                 Canvas.Left="10" Canvas.Top="10" 
                 FontSize="14" FontFamily="Georgia" 
