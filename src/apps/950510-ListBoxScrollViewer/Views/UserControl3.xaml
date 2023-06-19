@@ -96,7 +96,11 @@
                 Canvas.Left="10" Canvas.Top="10" 
                 FontSize="14" FontFamily="Georgia" 
                 FontWeight="Bold"/>
+
         <ListBox Grid.Row="1" Template="{StaticResource defaulttemplate}"
-             ItemsSource="{Binding MyStrings}" />
+                 Margin ="10, 5, 0, 0"
+                Focusable="True"
+                SelectionMode="Single"   
+             ItemsSource="{Binding SoftwareReleases}" />
     </Grid>
 </UserControl>

@@ -20,9 +20,15 @@ namespace ListBoxScrollViewer.ViewModels
 
             MyStrings = new ObservableCollection<string>();
 
+            var stringSample = "This is a very very very very very very very very very very very long long long long long long long long long long long long long long long long long long sample text to test a listbox scroller...";
+            stringSample = stringSample + stringSample + stringSample;
+
+            // Or
+            // stringSample = "This is a very long sample text to test a listbox scroller...";
+
             for (int i = 0; i < 15; i++)
             {
-                MyStrings.Add("This is a long sample text to test a listbox scroller...");
+                MyStrings.Add(stringSample);
             }
         }
     }
