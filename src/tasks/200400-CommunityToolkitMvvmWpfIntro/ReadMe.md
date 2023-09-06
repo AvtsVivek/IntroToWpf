@@ -5,6 +5,8 @@
 
 2. https://github.com/CommunityToolkit
 
+3. https://www.youtube.com/watch?v=uVIzK2snugk
+
 ## How this app is built.
 1. Start from the earlier example, 200220-ViewModelIntro
 
