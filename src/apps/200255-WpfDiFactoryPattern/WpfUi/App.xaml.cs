@@ -2,6 +2,7 @@
 using DataLibrary;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WpfUi.Utilities;
 
 namespace WpfUi;
 
@@ -15,7 +16,8 @@ public partial class App : Application
         AppHost = Host.CreateDefaultBuilder().ConfigureServices((hostContext, services) =>
         {
             services.AddSingleton<MainWindow>();
-            services.AddTransient<ChildForm>();
+            // services.AddTransient<ChildForm>();
+            services.AddFormFactory<ChildForm>();
             services.AddTransient<IDataAccess, DataAccess>();
             
         }).Build();

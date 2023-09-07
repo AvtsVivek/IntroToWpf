@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,9 @@ namespace WpfUi
     /// </summary>
     public partial class ChildForm : Window
     {
-        public ChildForm()
+        public ChildForm(IDataAccess dataAccess )
         {
+            DataContext = dataAccess;
             InitializeComponent();
         }
     }

@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:WpfUi"
         FontSize="24"
         mc:Ignorable="d"
-        Title="ChildForm" Height="200" Width="300">
+        Title="ChildForm" Height="200" Width="400">
     <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" >
-        <TextBlock x:Name="ChildFormTextBlock" Padding="20" Text="Child Form"  />
+        <TextBlock x:Name="ChildFormTextBlock" Padding="20" Text="{Binding Data}"  />
     </StackPanel>
 </Window>

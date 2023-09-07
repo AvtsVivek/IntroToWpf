@@ -1,6 +1,6 @@
 ﻿using DataLibrary;
 using System.Windows;
-
+using WpfUi.Utilities;
 
 namespace WpfUi;
 
@@ -9,17 +9,19 @@ namespace WpfUi;
 /// </summary>
 public partial class MainWindow : Window
 {
-    private ChildForm _childForm { get; set; }
-    public MainWindow(IDataAccess dataAccess, ChildForm childForm)
+    private readonly IAbstactFactory<ChildForm> _abstactFactory;
+
+    public MainWindow(IDataAccess dataAccess, IAbstactFactory<ChildForm> abstactFactory)
     {
 
         DataContext = dataAccess;
-        _childForm = childForm;
         InitializeComponent();
+        _abstactFactory = abstactFactory;
     }
 
     private void OpenChildForm_Click(object sender, RoutedEventArgs e)
     {
-        _childForm.Show();
+        var form = _abstactFactory.Create();
+        form.Show();
     }
 }
