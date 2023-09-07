@@ -1,4 +1,4 @@
-# Introduces View Model.
+# Introduces Delendency injection
 
 1. Start from the basic wpf application.
 

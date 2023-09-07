@@ -1,4 +1,4 @@
-# Introduces Factory pattern in wpf.
+# Introduces Factory pattern in wpf in conjunction with Dependency injection
 
 1. Start from earlier 200240-WpfDi project.
 2. To the UI Project, add a window called ChildForm.
