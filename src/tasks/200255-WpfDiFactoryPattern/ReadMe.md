@@ -69,3 +69,7 @@ serviceCollection.AddSingleton<Func<TForm>>(x =>
 	});
 
 ```
+
+## Reference.
+https://www.youtube.com/watch?v=dLR_D2IJE1M&t=1486s
+
