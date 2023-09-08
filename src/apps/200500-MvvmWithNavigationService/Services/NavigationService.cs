@@ -1,9 +1,8 @@
-﻿using NavigationService.Infra;
-using NavigationService.ViewModels;
+﻿using MvvmWithNavigationService.Infra;
 using System;
 using System.Diagnostics;
 
-namespace NavigationService.Services
+namespace MvvmWithNavigationService.Services
 {
     public interface INavigationService
     {
@@ -14,10 +13,10 @@ namespace NavigationService.Services
     public class NavigationService : ObservableObject, INavigationService
     {
         private BaseViewModel? _currentView;
-        public BaseViewModel CurrentView 
-        { 
-            get => _currentView!; 
-            set 
+        public BaseViewModel CurrentView
+        {
+            get => _currentView!;
+            set
             {
                 _currentView = value;
                 OnPropertyChanged();
@@ -36,7 +35,7 @@ namespace NavigationService.Services
             // So is a cyclic dependency. This would not work.
 
             // CurrentView = _viewModelFactory.Invoke(typeof(UserControl1ViewModel));
-            
+
         }
 
         public void NavigateTo<TViewModel>() where TViewModel : BaseViewModel

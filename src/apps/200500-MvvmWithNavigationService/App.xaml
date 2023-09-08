@@ -1,9 +1,9 @@
-﻿<Application x:Class="NavigationService.App"
+﻿<Application x:Class="MvvmWithNavigationService.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:NavigationService"
-             xmlns:localVs="clr-namespace:NavigationService.Views"             
-             xmlns:localVms="clr-namespace:NavigationService.ViewModels">
+             xmlns:local="clr-namespace:MvvmWithNavigationService"
+             xmlns:localVs="clr-namespace:MvvmWithNavigationService.Views"             
+             xmlns:localVms="clr-namespace:MvvmWithNavigationService.ViewModels">
     <Application.Resources>
         <DataTemplate DataType="{x:Type localVms:UserControl1ViewModel}">
             <localVs:UserControl1 />

@@ -1,12 +1,13 @@
-﻿using NavigationService.Views;
+﻿
 using Microsoft.Extensions.DependencyInjection;
-using NavigationService.Infra;
 using System.Windows;
-using NavigationService.ViewModels;
 using System;
-using NavigationService.Services;
+using MvvmWithNavigationService.ViewModels;
+using MvvmWithNavigationService.Services;
+using MvvmWithNavigationService.Infra;
+using MvvmWithNavigationService.Views;
 
-namespace NavigationService
+namespace MvvmWithNavigationService
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -27,7 +28,7 @@ namespace NavigationService
             services.AddSingleton<UserControl1ViewModel>();
             services.AddSingleton<UserControl2ViewModel>();
             services.AddSingleton<UserControl3ViewModel>();
-            services.AddSingleton<INavigationService, Services.NavigationService>();
+            services.AddSingleton<INavigationService, NavigationService>();
 
             // Working
             // services.AddSingleton<Func<Type, BaseViewModel>>(serviceProvider => viewModelType => (BaseViewModel)serviceProvider.GetRequiredService(viewModelType));

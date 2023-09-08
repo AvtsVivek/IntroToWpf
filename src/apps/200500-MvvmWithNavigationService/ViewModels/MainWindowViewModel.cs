@@ -1,7 +1,7 @@
-﻿using NavigationService.Infra;
-using NavigationService.Services;
+﻿using MvvmWithNavigationService.Infra;
+using MvvmWithNavigationService.Services;
 
-namespace NavigationService.ViewModels
+namespace MvvmWithNavigationService.ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {
@@ -10,7 +10,8 @@ namespace NavigationService.ViewModels
         public INavigationService Navigation
         {
             get { return _navigationService; }
-            set { 
+            set
+            {
                 _navigationService = value;
                 OnPropertyChanged();
             }

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace NavigationService.Views
+namespace MvvmWithNavigationService.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

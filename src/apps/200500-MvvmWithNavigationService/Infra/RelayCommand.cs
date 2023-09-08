@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace NavigationService.Infra
+namespace MvvmWithNavigationService.Infra
 {
-
-
     public class RelayCommand : ICommand
     {
         private readonly Predicate<object> _canExecute;
@@ -33,14 +31,12 @@ namespace NavigationService.Infra
             add
             {
                 CommandManager.RequerySuggested += value;
-                
+
             }
             remove
             {
                 CommandManager.RequerySuggested -= value;
-                
             }
         }
     }
-
 }

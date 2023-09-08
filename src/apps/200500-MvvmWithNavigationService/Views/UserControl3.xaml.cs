@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace NavigationService.Views
+namespace MvvmWithNavigationService.Views
 {
     /// <summary>
     /// Interaction logic for UserControl3.xaml

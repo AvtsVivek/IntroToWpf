@@ -1,9 +1,9 @@
-﻿using NavigationService.Infra;
-using NavigationService.Services;
+﻿using MvvmWithNavigationService.Infra;
+using MvvmWithNavigationService.Services;
 
-namespace NavigationService.ViewModels
+namespace MvvmWithNavigationService.ViewModels
 {
-    public class UserControl1ViewModel : BaseViewModel //IPageViewModel
+    public class UserControl1ViewModel : BaseViewModel 
     {
         public string PageId { get; set; }
         public string Title { get; set; }
