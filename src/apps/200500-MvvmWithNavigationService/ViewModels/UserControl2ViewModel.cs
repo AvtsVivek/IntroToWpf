@@ -5,7 +5,6 @@ namespace MvvmWithNavigationService.ViewModels
 {
     public class UserControl2ViewModel : BaseViewModel 
     {
-        public string PageId { get; set; }
         public string Title { get; set; } = "View 2";
 
         private INavigationService _navigationService;
@@ -24,9 +23,8 @@ namespace MvvmWithNavigationService.ViewModels
         // public RelayCommand NavigateToTwo { get; set; }
         public RelayCommand NavigateToThree { get; set; }
 
-        public UserControl2ViewModel(INavigationService navigationService, string pageIndex = "2")
+        public UserControl2ViewModel(INavigationService navigationService)
         {
-            PageId = pageIndex;
             // Do we need both here.
             _navigationService = navigationService;
             Navigation = navigationService;
