@@ -22,7 +22,13 @@ namespace CommunityToolkitMvvmWpfIntro
     {
         public MainWindow()
         {
-            DataContext = new MainWindowViewModel();
+            // We set the data context right in the xaml itself as follows.
+            /*
+            <Window.DataContext>
+                <local:MainWindowViewModel/>
+            </Window.DataContext>
+            */
+            // DataContext = new MainWindowViewModel();
             InitializeComponent();
         }
     }

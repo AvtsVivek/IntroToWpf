@@ -25,8 +25,16 @@ namespace BasicMvvmHWin
         {
             await AppHost!.StartAsync();
             var startupForm = AppHost.Services.GetRequiredService<MainWindow>();
+
+            // We are setting the data context directly in the xaml itself. 
+            // Something like the following
+            /*
+            <Window.DataContext>
+                <localVms:MainWindowViewModel/>
+            </Window.DataContext>
+            */
             // startupForm!.DataContext = new MainWindowViewModel(new DataModel { Data = "Placeholder" });
-            startupForm!.DataContext = new MainWindowViewModel();
+            // startupForm!.DataContext = new MainWindowViewModel();
             startupForm!.Show();
             base.OnStartup(e);
         }

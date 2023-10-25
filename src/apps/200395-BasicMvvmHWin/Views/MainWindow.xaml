@@ -8,6 +8,9 @@
         d:DataContext="{d:DesignInstance Type=localVms:MainWindowViewModel}"
         mc:Ignorable="d"
         Title="Page Navigation he" Height="320" Width="370" FontSize="50">
+    <Window.DataContext>
+        <localVms:MainWindowViewModel/>
+    </Window.DataContext>
     <StackPanel Orientation="Vertical">
         <TextBlock Text="{Binding Number}" />
         <TextBlock Text="{Binding ProcessId}" />

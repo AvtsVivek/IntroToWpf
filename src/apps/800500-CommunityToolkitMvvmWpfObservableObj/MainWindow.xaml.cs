@@ -18,7 +18,13 @@ namespace CommunityToolkitMvvmWpfObservableObj
     {
         public MainWindow()
         {
-            DataContext = new MainWindowViewModel();
+            // Data context is set directly in the xaml itself as follows. 
+            /*
+            <Window.DataContext>
+                <local:MainWindowViewModel/>
+            </Window.DataContext>
+            */
+            // DataContext = new MainWindowViewModel();
             InitializeComponent();
         }
     }
