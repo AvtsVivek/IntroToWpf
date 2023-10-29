@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace DesignTimeImagesAndListViews
+namespace DesignTimeImages
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
