@@ -8,7 +8,8 @@ To do
    2. https://www.codeproject.com/Tips/1040701/How-to-Debug-the-Design-Time-Errors-in-WPF-XAML-Fi
    3. https://www.codeproject.com/Tips/879109/Using-Design-time-Databinding-While-Developing-a-W
    4. badecho.com/index.php/2021/07/26/usable-design-time-data/
-   5. 
+   5. https://learn.microsoft.com/en-us/visualstudio/xaml-tools/xaml-data-binding-diagnostics
+   6. https://learn.microsoft.com/en-us/visualstudio/xaml-tools/xaml-designtime-data
 
 This is done
 
