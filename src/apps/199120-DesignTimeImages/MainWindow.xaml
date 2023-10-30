@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" FontSize="50">
     <StackPanel Orientation="Vertical">
-            <Image x:Name="ImageEx" d:Source="images\DesignTimePicture.png" Height="300" Width="500" />
+        <Image x:Name="ImageEx" d:Source="images\DesignTimePicture.png" Height="300" Width="500" />
     </StackPanel>
 </Window>
