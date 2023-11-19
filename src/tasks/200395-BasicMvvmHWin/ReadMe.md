@@ -13,3 +13,21 @@ xmlns:localVs="clr-namespace:BasicMvvmHWin.Views"
 xmlns:localVms="clr-namespace:BasicMvvmHWin.ViewModels"
 ```
 
+5. We need to Click the button.
+
+```cs
+private ICommand? _hWinButtonClick;
+
+public ICommand HWinButtonClick
+{
+    get
+    {
+        return _hWinButtonClick ??= new RelayCommand(x =>
+        {
+            HWnd = Process.GetCurrentProcess().MainWindowHandle.ToString();
+        });
+    }
+}
+
+```
+

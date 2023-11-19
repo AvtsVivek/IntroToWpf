@@ -31,8 +31,6 @@ namespace BasicMvvmHWin.ViewModels
 
         private ICommand? _hWinButtonClick;
 
-        // public event EventHandler<EventArgs<string>>? ViewChanged;
-
         public ICommand HWinButtonClick
         {
             get

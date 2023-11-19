@@ -1,11 +1,10 @@
-﻿using BasicMvvmHWin.ViewModels;
-using BasicMvvmHWin.Views;
-using BasicMvvmHWin.Infra;
+﻿using BasicMvvmHWinTaskRun.ViewModels;
+using BasicMvvmHWinTaskRun.Views;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Windows;
 
-namespace BasicMvvmHWin
+namespace BasicMvvmHWinTaskRun
 {
     /// <summary>
     /// Interaction logic for App.xaml
