@@ -19,3 +19,15 @@ Need to look into this.
 4. https://community.devexpress.com/blogs/wpf/archive/2022/05/05/wpf-view-model-generator-prism-amp-mvvm-light-support.aspx
 5. https://github.com/rmsmech/Tutorials/tree/master/WPF/MVVM
 6. https://www.youtube.com/watch?v=s5c7-vnaC_A
+
+## References
+
+1. https://github.com/AvtsVivek/LearnWpfPrism
+
+2. https://github.com/AvtsVivek/PlWpfWiredBrainCoffee
+
+3. https://github.com/AvtsVivek/WpfKogitoDmn
+
+4. https://github.com/AvtsVivek/DecoratorsForCcc/tree/main
+
+5. 
