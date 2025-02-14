@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="VectorBasedIConTrial.DynamicResourceTrialOne"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase" 
+             xmlns:local="clr-namespace:VectorBasedIConTrial"
+             xmlns:systemns="clr-namespace:System;assembly=mscorlib" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Loaded="UserControl_Loaded" >
+    <UserControl.Resources>
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock> Select resource key to see the icon displayed below</TextBlock>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" >
+            <ComboBox Name="resourceKeysComboBox" Width="300" 
+                      SelectionChanged="resourceKeysComboBox_SelectionChanged"></ComboBox>
+
+            <Button x:Name="moveBeforeButton" Content="&lt;" Width="100" Click="moveBeforeButton_Click" ></Button>
+            <Button Content="&gt;" x:Name="moveNextButton" Width="100" Click="moveNextButton_Click"></Button>
+
+        </StackPanel>
+        <ContentControl Grid.Row="2" Content="{Binding ActiveResourceView}" >
+            <ContentControl.Resources>
+                <DataTemplate DataType="{x:Type local:PathWrapper}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding TitleText}"></TextBlock>
+                        <Viewbox
+                        Grid.Row="2" Width="40" Height="40" Margin="5,5,5,5" 
+                        HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <Path
+                                Name="path" HorizontalAlignment="Left" VerticalAlignment="Top" 
+                                Data="{Binding PathObject.Data}" Fill="Black" Stretch="Uniform" />
+                        </Viewbox>
+                    </StackPanel>
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type local:DrawingImageWrapper}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding TitleText}"></TextBlock>
+                        <Image
+                        Name="path"
+                        Width="40"
+                        Height="40"
+                        Margin="5,5,5,5"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Source="{Binding Path=DrawingImageObject}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
+    </Grid>
+</UserControl>
