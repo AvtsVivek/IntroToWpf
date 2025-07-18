@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="CharH.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CharG.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CharF.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CharE.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CharD.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CharC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CharB.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DigitEight.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DigitSeven.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DigitSix.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DigitFive.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CharA.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
