@@ -1,8 +1,8 @@
-# Introduces Delendency injection
+# Introduces Dependency injection
 
 1. Start from the basic wpf application.
 
-2. Add a new ClassLib project to the solution. 
+2. Add a new ClassLib project to the solution.
 
 3. Add a simple class along with an interface, with one string type prop called Data. 
 

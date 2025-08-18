@@ -9,7 +9,7 @@
 3. https://stackoverflow.com/q/15749584/1977871
 
 ## How this project is built.
-1. This is a regular NET 7 windows project.
+1. This is a regular NET 9 windows project.
 2. Add the following headers
 ```xaml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

@@ -17,7 +17,7 @@ public class AbstactFactory<T> : IAbstactFactory<T>
 
     public T Create()
     {
-        // Here we are running the delegate that is reprsented by this factory Func<T>
+        // Here we are running the delegate that is represented by this factory Func<T>
         // This will create the object of type T.
         T t = _factory();
         return t;

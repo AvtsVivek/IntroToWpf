@@ -8,7 +8,7 @@
 
 
 ## How this project is built.
-1. This is a regular NET 7 windows project.
+1. This is a regular NET 9 windows project.
 
 2. Refer to the following.
    1. https://learn.microsoft.com/en-us/visualstudio/xaml-tools/xaml-designtime-data#design-time-data-basics

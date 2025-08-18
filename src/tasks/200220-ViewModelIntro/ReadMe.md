@@ -6,7 +6,7 @@
 
 3. In the code behing MainWindow.xaml.cs file, assign the above object MainWindowViewModel as DataContext to MainWindow.
 
-4. In the MainWindw.xaml file, add the following. This will enable intellisence at design time.
+4. In the MainWindw.xaml file, add the following. This will enable intellisense at design time.
 
 ```xaml
 d:DataContext="{d:DesignInstance Type=local:MainWindowViewModel}"
