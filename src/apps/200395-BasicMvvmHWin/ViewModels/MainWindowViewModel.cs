@@ -1,11 +1,6 @@
-﻿using BasicMvvmHWin.ViewModels;
-using BasicMvvmHWin.Infra;
-using System.Collections.Generic;
+﻿using BasicMvvmHWin.Infra;
 using System.Windows.Input;
-using System;
 using System.Diagnostics;
-using System.Reflection.Metadata;
-using System.Windows.Interop;
 
 namespace BasicMvvmHWin.ViewModels
 {
