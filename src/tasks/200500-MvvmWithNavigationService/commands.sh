@@ -1,8 +1,8 @@
 cd ../../..
 
-cd src/tasks/200500-NavigationService
+cd src/tasks/200500-MvvmWithNavigationService
 
-cd src/apps/200500-NavigationService
+cd src/apps/200500-MvvmWithNavigationService
 
 dotnet build ./NavigationService.csproj
 
