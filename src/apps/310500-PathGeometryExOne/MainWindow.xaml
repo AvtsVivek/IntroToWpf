@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Background="Black" Height="450" Width="800" FontSize="50">
     <Grid>
-        <local:CharH />
+        <local:CharA />
     </Grid>
 </Window>
