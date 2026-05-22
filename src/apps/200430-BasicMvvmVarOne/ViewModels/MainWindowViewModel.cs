@@ -1,8 +1,7 @@
-﻿using BasicMvvmVarOne.ViewModels;
-using BasicMvvmVarOne.Infra;
+﻿using BasicMvvmVarOne.Infra;
+using System;
 using System.Collections.Generic;
 using System.Windows.Input;
-using System;
 
 namespace BasicMvvmVarOne.ViewModels
 {
@@ -16,7 +15,7 @@ namespace BasicMvvmVarOne.ViewModels
 
         public event EventHandler<EventArgs<string>>? ViewChanged;
 
-        private readonly Dictionary<string, IPageViewModel>? _pageViewModels = new();
+        private readonly Dictionary<string, IPageViewModel>? _pageViewModels = [];
 
         public IPageViewModel? CurrentPageViewModel
         {
