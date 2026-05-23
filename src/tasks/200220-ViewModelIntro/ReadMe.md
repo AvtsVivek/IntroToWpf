@@ -14,7 +14,7 @@ d:DataContext="{d:DesignInstance Type=local:MainWindowViewModel}"
 
 ![Intellisence](images/51_50IntellisenceToMainWindow.jpg)
 
-5. Finally add the following Textblock to the MAinWindow.
+5. Finally add the following Textblock to the MainWindow.
 
 ```xaml
 <TextBlock Text="{Binding Number}" />

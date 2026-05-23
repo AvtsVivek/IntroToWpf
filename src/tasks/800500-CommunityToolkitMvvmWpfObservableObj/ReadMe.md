@@ -9,6 +9,8 @@
  
 4. https://community.devexpress.com/blogs/wpf/archive/2022/05/05/wpf-view-model-generator-prism-amp-mvvm-light-support.aspx
 
+5. https://devblogs.microsoft.com/dotnet/announcing-the-dotnet-community-toolkit-800/
+
 ## How this app is built.
 1. Start from the earlier example, 200400-CommunityToolkitMvvmWpfIntro
 

@@ -1,19 +1,17 @@
-﻿using System;
-using System.Windows.Input;
-using BasicMvvmVarOne.Infra;
+﻿using BasicMvvmVarOne.Infra;
 
 namespace BasicMvvmVarOne.ViewModels
 {
-    public class UserControl1ViewModel : IPageViewModel
-    {
-        public event EventHandler<EventArgs<string>>? ViewChanged;
-        public string PageId { get; set; }
-        public string Title { get; set; }
+	public class UserControl1ViewModel : IPageViewModel
+	{
+		// public event EventHandler<EventArgs<string>>? ViewChanged;
+		public string PageId { get; set; }
+		public string Title { get; set; }
 
-        public UserControl1ViewModel(string pageIndex = "1")
-        {
-            PageId = pageIndex;
-            Title = "View 1";
-        }
-    }
+		public UserControl1ViewModel(string pageIndex = "1")
+		{
+			PageId = pageIndex;
+			Title = "View 1";
+		}
+	}
 }
