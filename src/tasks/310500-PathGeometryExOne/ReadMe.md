@@ -28,7 +28,7 @@ To create a path for a text, follow these steps as shown in the below screen cap
 
 7. 
 
-![Path Properties](images/58_50_SaveAs.png.png)
+![Path Properties](images/58_50_SaveAs.png)
 
 8. 
 
