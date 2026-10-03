@@ -13,7 +13,6 @@ public partial class MainWindow : Window
 
     public MainWindow(IDataAccess dataAccess, IAbstactFactory<ChildForm> abstactFactory)
     {
-
         DataContext = dataAccess;
         InitializeComponent();
         _abstactFactory = abstactFactory;

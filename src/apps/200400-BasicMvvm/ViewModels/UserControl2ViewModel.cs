@@ -1,13 +1,14 @@
-﻿using System;
+﻿using BasicMvvm.Infra;
+using System;
 using System.Windows.Input;
-using BasicMvvm.Infra;
 
 namespace BasicMvvm.ViewModels
 {
-    public class UserControl2ViewModel : BaseViewModel, IPageViewModel
+    public class UserControl2ViewModel : IPageViewModel
     {
         private ICommand? _goTo1;
         private ICommand? _goTo3;
+
         public event EventHandler<EventArgs<string>>? ViewChanged;
         public string PageId { get; set; }
         public string Title { get; set; } = "View 2";

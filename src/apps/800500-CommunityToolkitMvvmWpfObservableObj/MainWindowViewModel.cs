@@ -16,7 +16,7 @@ namespace CommunityToolkitMvvmWpfObservableObj
         // The following method is executed before the assignment.
         partial void OnFirstNameChanging(string value)
         {
-            
+
         }
 
         // The following is executed after the 

@@ -1,10 +1,10 @@
-﻿using System;
+﻿using BasicMvvm.Infra;
+using System;
 using System.Windows.Input;
-using BasicMvvm.Infra;
 
 namespace BasicMvvm.ViewModels
 {
-    public class UserControl3ViewModel : BaseViewModel, IPageViewModel
+    public class UserControl3ViewModel : IPageViewModel
     {
         private ICommand? _goTo1;
         private ICommand? _goTo2;

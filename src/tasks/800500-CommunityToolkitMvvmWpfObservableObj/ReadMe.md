@@ -6,6 +6,10 @@
 2. https://github.com/CommunityToolkit
 
 3. https://www.youtube.com/watch?v=uVIzK2snugk
+ 
+4. https://community.devexpress.com/blogs/wpf/archive/2022/05/05/wpf-view-model-generator-prism-amp-mvvm-light-support.aspx
+
+5. https://devblogs.microsoft.com/dotnet/announcing-the-dotnet-community-toolkit-800/
 
 ## How this app is built.
 1. Start from the earlier example, 200400-CommunityToolkitMvvmWpfIntro
@@ -78,5 +82,7 @@ partial class MainWindowViewModel
     }
 }
 ```
+
+
 
 Observe what all this generates. Like OnFirstNameChanging and OnFirstNameChanged. You can use these methods. These are like extension points.

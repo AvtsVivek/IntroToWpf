@@ -9,6 +9,14 @@
         mc:Ignorable="d"
         Title="Page Navigation he" Height="450" Width="800">
     <Grid>
-        <ContentControl Content="{Binding CurrentPageViewModel}" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <ContentControl Grid.Row="0" Content="{Binding CurrentPageViewModel}" VerticalAlignment="Center" />
+        
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Grid.Row="1" Text="{Binding DataModel.Data}" FontSize="16" FontWeight="Bold" Margin="10" />
     </Grid>
 </Window>

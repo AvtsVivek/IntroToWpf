@@ -9,7 +9,7 @@
 3. https://stackoverflow.com/q/15749584/1977871
 
 ## How this project is built.
-1. This is a regular NET 9 windows project.
+1. This is a regular NET 10 windows project.
 2. Add the following headers
 ```xaml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -36,5 +36,5 @@ mc:Ignorable="d"
 
 ![Running Wpf app after button click](images/52_50_RunningAppAfterButtonClick.jpg)
 
-3. Note the entire second button is not visible at all. This is because the d attribute is applied to the button itself.
+3. Note the entire second button is not visible at all. This is because the d attribute is applied to the button itself and not to the content.
 

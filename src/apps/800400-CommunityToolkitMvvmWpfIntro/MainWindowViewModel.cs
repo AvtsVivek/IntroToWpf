@@ -1,24 +1,19 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace CommunityToolkitMvvmWpfIntro
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {
-        
         private string number = "One";
 
         public string Number
         {
             get { return number; }
-            set { 
-                number = value; 
+            set
+            {
+                number = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(number)));
             }
         }
