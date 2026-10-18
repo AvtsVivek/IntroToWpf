@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="270" Width="350" FontSize="50">
     <StackPanel Orientation="Vertical">
-        <TextBlock Text="{Binding Number}" />
-        <TextBlock Text="{Binding ProcessId}" />
+        <TextBlock Text="{Binding Number}" d:Text="Five" />
+        <TextBlock Text="{Binding ProcessId}" d:Text="12345" />
     </StackPanel>
 </Window>

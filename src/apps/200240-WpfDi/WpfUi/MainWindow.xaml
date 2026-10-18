@@ -9,6 +9,6 @@
         d:DataContext="{d:DesignInstance Type=datalib:IDataAccess}"
         Title="MainWindow" Height="350" Width="600">
     <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" >
-        <TextBlock x:Name="Data" Padding="20" Text="{Binding Data}"  />
+        <TextBlock x:Name="Data" Padding="20" Text="{Binding Data}" d:Text="Sample Data" />   
     </StackPanel>
 </Window>

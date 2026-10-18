@@ -1,7 +1,7 @@
-﻿using System.Windows;
-using DataLibrary;
+﻿using DataLibrary;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Windows;
 
 namespace WpfUi;
 
@@ -16,14 +16,14 @@ public partial class App : Application
         {
             services.AddSingleton<MainWindow>();
             services.AddTransient<IDataAccess, DataAccess>();
-            
+
         }).Build();
     }
     protected override async void OnStartup(StartupEventArgs e)
     {
         await AppHost!.StartAsync();
-        var startupForm = AppHost.Services.GetRequiredService<MainWindow>();
-        //startupForm!.DataContext = new MainWindowViewModel(new DataModel { Data = "Placeholder" });
+        MainWindow startupForm = AppHost.Services.GetRequiredService<MainWindow>();
+
         startupForm!.Show();
         base.OnStartup(e);
     }

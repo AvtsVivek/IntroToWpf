@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="WpfAutofacDi.DataLibrary/WpfAutofacDi.DataLibrary.csproj" />
+  <Project Path="WpfAutofacDi.WpfUi/WpfAutofacDi.WpfUi.csproj" />
+</Solution>
